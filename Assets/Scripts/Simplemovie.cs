@@ -16,11 +16,12 @@ public class Simplemovie : MonoBehaviour
     void Update()
     {
         float HorizontalInput = Input.GetAxisRaw("Horizontal");
+        float VerticalInput = Input.GetAxisRaw("Vertical");
+
+        Vector3 velocity = new Vector3(HorizontalInput,VerticalInput,0f)* SpeedFactor;
 
 
-
-        float SO= transform.position.x;
-        float S = (SO + HorizontalInput * SpeedFactor * Time.deltaTime);
-        transform.position = new Vector3(S, transform.position.y,transform.position.z);
+        
+        transform.position =  transform.position + velocity * Time.deltaTime;
     }
 }
