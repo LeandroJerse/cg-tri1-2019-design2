@@ -6,6 +6,14 @@ public class Simplemovie : MonoBehaviour
 {
     [SerializeField]
     private float SpeedFactor = 1f;
+     [SerializeField]
+    private float limitetop= 4f;
+     [SerializeField]
+    private float limitebot= -4;
+     [SerializeField]
+    private float limiteleft= -8;
+     [SerializeField]
+    private float limiteright= 8;
 
     void Start()
     {
@@ -23,5 +31,17 @@ public class Simplemovie : MonoBehaviour
 
         
         transform.position =  transform.position + velocity * Time.deltaTime;
+        if (transform.position.y < limitebot) {
+            transform.position =new Vector3(transform.position.x, limitebot,transform.position.z);
+        }
+        if (transform.position.y > limitetop) {
+            transform.position =new Vector3(transform.position.x, limitetop,transform.position.z);
+        }
+        if (transform.position.x < limiteleft) {
+            transform.position =new Vector3(limiteleft,transform.position.y,transform.position.z);
+        }
+        if (transform.position.x > limiteright) {
+            transform.position =new Vector3(limiteright,transform.position.y,transform.position.z);
+        }
     }
 }
