@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 42689336}
   - component: {fileID: 42689338}
   m_Layer: 0
-  m_Name: frame-1Resultado
+  m_Name: Bird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -164,9 +164,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -325316149
+  m_SortingLayer: 2
+  m_SortingOrder: 100
   m_Sprite: {fileID: 21300000, guid: 3b516f5f704c2d04a86b6d2510991525, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -404,8 +404,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 259760779
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7f704c3556b86a24489fbb52604e3e92, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
