@@ -7,9 +7,9 @@ public class Simplemovie : MonoBehaviour
     [SerializeField]
     private float SpeedFactor = 1f;
      [SerializeField]
-    private float limitetop= 4f;
+    private float limitetop= 10f;
      [SerializeField]
-    private float limitebot= -4;
+    private float limitebot= 0;
      [SerializeField]
     private float limiteleft= -8;
      [SerializeField]
