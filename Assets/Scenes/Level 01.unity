@@ -728,7 +728,7 @@ GameObject:
   - component: {fileID: 180759499}
   - component: {fileID: 180759498}
   m_Layer: 0
-  m_Name: Menegers
+  m_Name: Manegers
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -748,6 +748,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TapeSpeed: {x: -2, y: 0, z: 0}
   Tape: {fileID: 1425326329}
+  uiComponents:
+    hud:
+      txtCoincCount: {fileID: 164609139}
+      txtLifeCount: {fileID: 263813398}
+      panelHud: {fileID: 1384880902}
 --- !u!4 &180759499
 Transform:
   m_ObjectHideFlags: 0
@@ -2363,7 +2368,7 @@ GameObject:
   - component: {fileID: 532502813}
   - component: {fileID: 532502812}
   m_Layer: 5
-  m_Name: LifeCout (1)
+  m_Name: LifeCount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2387,7 +2392,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -213, y: -54.64001}
+  m_AnchoredPosition: {x: -213, y: -54.640015}
   m_SizeDelta: {x: 337.54004, y: 60.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &532502812
@@ -16790,7 +16795,7 @@ GameObject:
   - component: {fileID: 1669399145}
   - component: {fileID: 1669399144}
   m_Layer: 5
-  m_Name: CoinCout
+  m_Name: CoinCount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
