@@ -5,6 +5,7 @@ using UnityEngine.Assertions;
 
 public class SceneMeneger : MonoBehaviour
 {
+    public static SceneMeneger instance = null;
 
     [SerializeField]
     private Vector3 TapeSpeed = new Vector3(-2f, 0f, 0);
@@ -13,19 +14,29 @@ public class SceneMeneger : MonoBehaviour
 
     public  UIComponents uiComponents;
 
+    SceneData sceneData = new SceneData();
+
     void Awake() { 
     
         Assert.IsNotNull(Tape);
+        if (instance == null){
+            instance=this;
+        }
     }
 
-    void Start()
-    {
-        
-    }
+   
 
     // Update is called once per frame
     void Update()
     {
         Tape.position = Tape.position + TapeSpeed * Time.deltaTime;
+        DisplayHudData();
+    }
+    public void IncrementCoinCount() {
+        sceneData.coinCount = sceneData.coinCount + 1;
+    }
+
+    void DisplayHudData(){
+        uiComponents.hud.txtCoinCount.text = "X "+ sceneData.coinCount;
     }
 }

@@ -10,7 +10,7 @@ public class UIComponents
    [Serializable] 
    public class Hud{
        [Header("Text")]
-       public Text txtCoincCount;
+       public Text txtCoinCount;
        public Text txtLifeCount;
 
        [Header("Other")]

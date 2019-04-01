@@ -750,7 +750,7 @@ MonoBehaviour:
   Tape: {fileID: 1425326329}
   uiComponents:
     hud:
-      txtCoincCount: {fileID: 164609139}
+      txtCoinCount: {fileID: 164609139}
       txtLifeCount: {fileID: 263813398}
       panelHud: {fileID: 1384880902}
 --- !u!4 &180759499
