@@ -22,7 +22,7 @@ public class PlayerControl : MonoBehaviour
             SFXManager.instance.ShowCoinParticles(other.gameObject);
 
             Destroy(other.gameObject);
-            SceneMeneger.instance.IncrementCoinCount();
+            LevelManager.instance.IncrementCoinCount();
         }
     }
 } 
