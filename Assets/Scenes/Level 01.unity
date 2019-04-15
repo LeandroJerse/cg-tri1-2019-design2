@@ -16759,6 +16759,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioSFX:
     coinPickup: {fileID: 8300000, guid: 20c9c306c5863e646b10017a57c871aa, type: 3}
+    fail: {fileID: 8300000, guid: c21d2b78f4373d048a52a67f4083c00d, type: 3}
   audioPlayer:
     jump: {fileID: 8300000, guid: f5d4d290983fd014fa6bd3c30f45f02f, type: 3}
 --- !u!4 &1489848744 stripped
@@ -17492,6 +17493,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coinParticles: {fileID: 784878542010692772, guid: 8086d6e8f7ca1e64b8e08c5e748088c4,
+    type: 3}
+  dieParticles: {fileID: 6712235201760126016, guid: 9d846a9b2eb363144b173fed0fefef46,
     type: 3}
 --- !u!4 &1654951575 stripped
 Transform:
