@@ -24,6 +24,11 @@ public class PlayerControl : MonoBehaviour
             Destroy(other.gameObject);
             LevelManager.instance.IncrementCoinCount();
         }
+        if (other.gameObject.CompareTag("Gift")){
+            AudioManager.instance.PlaySoundLevelComplete();
+            Destroy(gameObject);
+            
+        }
 
         else if (other.gameObject.layer == LayerMask.NameToLayer("enemies")){
            KillPlayer();
@@ -39,4 +44,6 @@ public class PlayerControl : MonoBehaviour
             SFXManager.instance.ShowDieParticles(gameObject);
             Destroy(gameObject);
     }
+
+     
 } 
