@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+
+    Rigidbody2D rb;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -23,6 +26,8 @@ public class PlayerControl : MonoBehaviour
 
             Destroy(other.gameObject);
             LevelManager.instance.IncrementCoinCount();
+
+            Impulse(10);
         }
         if (other.gameObject.CompareTag("Gift")){
            
@@ -52,5 +57,8 @@ public class PlayerControl : MonoBehaviour
             LevelManager.instance.ShowGameOverPanel();
     }
 
-     
+     void Impulse (float force) {
+         rb.velocity = Vector3.zero;
+         rb.AddForce(Vector3.up * force, ForceMode2D.Impulse);
+     }
 } 
