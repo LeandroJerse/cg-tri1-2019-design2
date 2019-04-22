@@ -959,7 +959,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -7.414049, y: -0.0143966675}
+  m_Offset: {x: -7.075312, y: -0.0143966675}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -970,7 +970,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.740963, y: 17.741531}
+  m_Size: {x: 5.418437, y: 17.741531}
   m_EdgeRadius: 0
 --- !u!20 &519420031
 Camera:
@@ -1043,7 +1043,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 7.138431, y: -0.14138508}
+  m_Offset: {x: 6.833567, y: -0.14138508}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1054,7 +1054,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.438283, y: 17.635225}
+  m_Size: {x: 5.048011, y: 17.635225}
   m_EdgeRadius: 0
 --- !u!61 &519420035
 BoxCollider2D:
@@ -1069,7 +1069,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.02089119, y: 9.123325}
+  m_Offset: {x: -0.02089119, y: 8.81846}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1080,7 +1080,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 17.921303, y: 0.84440994}
+  m_Size: {x: 17.921303, y: 1.4541397}
   m_EdgeRadius: 0
 --- !u!1 &556689576
 GameObject:
@@ -1174,7 +1174,6 @@ GameObject:
   - component: {fileID: 728935284}
   - component: {fileID: 728935287}
   - component: {fileID: 728935290}
-  - component: {fileID: 728935289}
   - component: {fileID: 728935288}
   - component: {fileID: 728935291}
   m_Layer: 8
@@ -1298,19 +1297,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df65631a687d3a140947b51e3e62d1c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &728935289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 728935283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69509dd30279a174b8c2b1f4728d44d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SpeedFactor: 10
 --- !u!70 &728935290
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -1339,8 +1325,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e0f86fddabe9a4f901d359253b6e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  particles: {fileID: 784878542010692772, guid: 8086d6e8f7ca1e64b8e08c5e748088c4,
-    type: 3}
+  lerpRate: 4
 --- !u!1 &921680328
 GameObject:
   m_ObjectHideFlags: 0
@@ -1915,7 +1900,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1433319138
 Transform:
   m_ObjectHideFlags: 0
@@ -2169,7 +2154,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 168.82, y: -54.639984}
+  m_AnchoredPosition: {x: 168.81995, y: -54.639893}
   m_SizeDelta: {x: 337.54, y: 60.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1669399144
