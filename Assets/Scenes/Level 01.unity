@@ -1121,7 +1121,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.024719238}
+  m_AnchoredPosition: {x: 0, y: -0.024658203}
   m_SizeDelta: {x: -0, y: -0.15137}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &556689578
@@ -1176,6 +1176,7 @@ GameObject:
   - component: {fileID: 728935290}
   - component: {fileID: 728935289}
   - component: {fileID: 728935288}
+  - component: {fileID: 728935291}
   m_Layer: 8
   m_Name: Fatbird
   m_TagString: Player
@@ -1326,6 +1327,20 @@ CapsuleCollider2D:
   m_Offset: {x: 0.055865943, y: 0.003103733}
   m_Size: {x: 0.92238986, y: 0.9410119}
   m_Direction: 0
+--- !u!114 &728935291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728935283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76e0f86fddabe9a4f901d359253b6e33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  particles: {fileID: 784878542010692772, guid: 8086d6e8f7ca1e64b8e08c5e748088c4,
+    type: 3}
 --- !u!1 &921680328
 GameObject:
   m_ObjectHideFlags: 0
